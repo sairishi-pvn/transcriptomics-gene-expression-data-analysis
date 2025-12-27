@@ -18,7 +18,7 @@ library(affy)
 
 
 #Load count matrix
-counts <- read.csv("samples.csv", row.names=1)
+counts <- read.csv("data/samples.csv", row.names=1)
 head(counts)
 
 #Create DGE object
@@ -54,4 +54,5 @@ contr <- makeContrasts(groupLum.A. - groupLum.B. , levels = colnames(coef(fit)))
 tmp <- contrasts.fit(fit , contr)
 tmp <- eBayes(tmp)
 top.table <- topTable(tmp , sort.by = "P" , n = Inf)
+
 head(top.table , 20)
