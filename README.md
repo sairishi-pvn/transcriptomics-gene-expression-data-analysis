@@ -1,7 +1,8 @@
 # Transcriptomics Gene Expression Data Analysis
 
-This repository contains workflows for gene expression analysis using
-RNA-seq and microarray data.
+This repository contains multiple workflows and scripts related to
+gene expression analysis in transcriptomics, including RNA-seq and
+microarray-based approaches.
 
 ## Scope
 - RNA-seq differential expression analysis
@@ -15,6 +16,10 @@ RNA-seq and microarray data.
 - edgeR
 - limma
 - affy
+
+- ## Repository Structure
+- `.R` scripts contain individual analysis workflows
+- `.csv` files contain example gene expression datasets
 
 ## Purpose
 This repository serves as a learning and portfolio project for
